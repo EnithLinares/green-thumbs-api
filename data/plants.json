@@ -1,0 +1,18 @@
+[
+  {
+    "id": 0,
+    "name": "Mimi",
+    "species": "Pothos",
+    "watering": "Every 5 days",
+    "sunlight": "Full or partial sun",
+    "image": "./public/images/pothos.png"
+  },
+  {
+    "id": 1,
+    "name": "Alex",
+    "species": "Arrowhead",
+    "watering": "Every 7 days",
+    "sunlight": "Partial sun",
+    "image": "./public/images/arrowhead.png"
+  }
+]
