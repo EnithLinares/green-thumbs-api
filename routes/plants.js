@@ -20,11 +20,11 @@ router.get("/", function (req, res) {
 });
 
 router.post("/", function (req, res) {
-  const { name, species, watering, sunlight } = req.body;
+  const { nickname, species, watering, sunlight } = req.body;
   const oldPlants = readPlants();
   const newPlantObject = {
     id: oldPlants.length,
-    name: name,
+    nickname: nickname,
     species: species,
     watering: watering,
     sunlight: sunlight,

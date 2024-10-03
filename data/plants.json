@@ -1,18 +1,18 @@
 [
   {
     "id": 0,
-    "name": "Mimi",
-    "species": "Pothos",
-    "watering": "Every 5 days",
-    "sunlight": "Full or partial sun",
-    "image": "/pothos.png"
+    "nickname": "Mimi",
+    "species": "pothos",
+    "watering": "every 5 days",
+    "sunlight": "full or partial sun",
+    "image": "pothos.png"
   },
   {
     "id": 1,
-    "name": "Alex",
-    "species": "Arrowhead",
-    "watering": "Every 7 days",
-    "sunlight": "Partial sun",
-    "image": "/arrowhead.png"
+    "nickname": "Alex",
+    "species": "arrowhead",
+    "watering": "every 7 days",
+    "sunlight": "partial sun",
+    "image": "arrowhead.png"
   }
 ]
