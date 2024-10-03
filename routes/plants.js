@@ -21,19 +21,19 @@ router.get("/", function (req, res) {
 
 router.post("/", function (req, res) {
   const { name, species, watering, sunlight } = req.body;
+  const oldPlants = readPlants();
   const newPlantObject = {
-    id: plants.length,
+    id: oldPlants.length,
     name: name,
     species: species,
     watering: watering,
     sunlight: sunlight,
     image: `${species}.png`,
   };
-  const newPlantList = plants;
-  newPlantList.push(newPlantObject);
-  const newPlantsJson = JSON.stringify(newPlantList);
-  fs.writeFileSync("./data/plants.json", newPlantsJson);
-  res.send(newPlantsJson);
+  oldPlants.push(newPlantObject);
+  const newPlants = JSON.stringify(oldPlants);
+  fs.writeFileSync("./data/plants.json", newPlants);
+  res.send(newPlants);
 });
 
 export default router;
